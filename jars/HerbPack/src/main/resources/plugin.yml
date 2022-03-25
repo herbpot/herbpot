@@ -1,0 +1,4 @@
+name: HerbPack
+version: '${project.version}'
+main: herb.herb.Main
+api-version: 1.18
