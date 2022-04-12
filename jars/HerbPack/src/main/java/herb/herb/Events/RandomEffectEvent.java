@@ -9,8 +9,6 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import java.util.Map;
-
 public class RandomEffectEvent implements Listener {
     @EventHandler
     public void damagedPlayer(EntityDamageEvent e) {
@@ -18,7 +16,7 @@ public class RandomEffectEvent implements Listener {
             if (e.getEntityType().equals(EntityType.PLAYER)) {
                 Player p = (Player) e.getEntity();
                 int randomNum = (int) Math.floor(Math.random() * 32);
-                p.addPotionEffect(new PotionEffect((Map<String, Object>) PotionEffectType.getById(randomNum)));
+                p.addPotionEffect(new PotionEffect(PotionEffectType.getById(randomNum),3,3));
             }
         }
     }

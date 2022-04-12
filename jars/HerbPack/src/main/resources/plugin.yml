@@ -2,3 +2,71 @@ name: HerbPack
 version: '${project.version}'
 main: herb.herb.Main
 api-version: 1.18
+commands:
+  force:
+    description: "사용자에게 명령어를 강제합니다"
+    aliases:
+      - force
+    usage: /force
+
+  trace:
+    description: "클릭한 플레이어에게 이동합니다"
+    aliases:
+      - trace
+      - tr
+    usage: /trace
+
+#  startRanmon:
+#    description: "랜몬뽑 게임을 시작합니다"
+#    aliases:
+#      - startRanmon
+#      - sran
+#    usage: /startRanmon
+
+  startmanhunt:
+    description: "manhunt를 시작합니다"
+    aliases:
+      - startmanhunt
+      - sman
+    usage: /startmanhunt
+
+  tpto:
+    description: "상대방을 사용자에게 tp시킵니다"
+    aliases:
+      - tpto
+      - ttp
+    usage: /tpto
+
+  market:
+    description: "상점을 엽니다"
+    aliases:
+      - market
+      - mk
+    usage: /market
+
+  marketsetitem:
+    description: "상점에 판매아이템을 추가합니다"
+    aliases:
+      - marketsetitem
+      - mkadd
+    usage: /marketsetitem
+
+  setuserconfig:
+    description: "사용자의 config정보를 수정합니다"
+    aliases:
+      - setuserconfig
+      - setuc
+    usage: /setuserconfig
+
+  showuserconfig:
+    description: "사용자의 config정보를 보여줍니다"
+    aliases:
+      - showuserconfig
+      - showuc
+    usage: /showuserconfig
+  startrandomarmed:
+    description: "랜덤으로 무장을 지급하여 pvp에 도움을 줍니다"
+    aliases:
+      - randomarmed
+      - startrarm
+    usage: /startrandomarmed

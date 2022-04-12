@@ -15,5 +15,23 @@ public class Item_ {
         item.setItemMeta(itemMeta);
         return item;
     }
+    public ItemStack dumy(){
+        ItemStack item = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE);
+        ItemMeta itemM = item.getItemMeta();
+        itemM.setLocalizedName("dumy");
+        itemM.setDisplayName(" ");
+        item.setItemMeta(itemM);
+        return item;
+    }
+
+//    public ItemStack arrow(int direction){
+//
+//        ItemStack item = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE);
+//        ItemMeta itemM = item.getItemMeta();
+//        itemM.setLocalizedName("dumy");
+//        itemM.setDisplayName(" ");
+//        item.setItemMeta(itemM);
+//        return item;
+//    }
 
 }

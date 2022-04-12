@@ -13,7 +13,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import java.util.Collections;
 
-public class RanMonsterEvent implements Listener {
+public class RanMonsterEvent_ implements Listener {
     @EventHandler
     public void killMonster(EntityDamageByEntityEvent e){
         if(!(new GlobalArgus().RanMonsterStart)){return;}

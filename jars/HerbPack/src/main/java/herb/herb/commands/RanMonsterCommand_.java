@@ -17,7 +17,7 @@ import java.util.List;
 
 import static org.bukkit.Bukkit.getLogger;
 
-public class RanMonsterCommand implements TabExecutor {
+public class RanMonsterCommand_ implements TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (sender instanceof Player) {

@@ -12,7 +12,7 @@ import org.bukkit.inventory.meta.SkullMeta;
 public class TraceEvent implements Listener {
     @EventHandler
     public void Clicktracer(InventoryClickEvent e) {
-        if (e.getInventory() instanceof TraceCommand) {
+        if (e.getView().getTitle().equals(new GlobalArgus().TracerName)) {
             if(e.getCurrentItem() == null){return;}
             SkullMeta meta = (SkullMeta) e.getCurrentItem().getItemMeta();
             Player p = (Player) meta.getOwningPlayer();
