@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플레너</title>
+</head>
+<body>
+    <script>
+    var submiter = document.getElementById('submit')
+    check = () => {
+        var planlist = getElementsByName('plan')
+        var afterplanlist = []
+        for (var i=0; i<planlist.length; i++){
+            var subject = planlist[i].getElementById('subject');
+            var sucess = planlist[i].getElementById('sucess');
+            var countpg = planlist[i].getElementById('countpg');
+            var time = planlist[i].getElementById('time');
+            var book = planlist[i].getElementById('book');
+            afterplanlist.push([subject,book,countpg,time,sucess])
+        }
+    }
+    submiter.addEventListener('click',check)
+
+    </script>
+    <table border="1">
+        <th></th>
+        <tr>
+            <td>과목</td>
+            <td>교재</td>
+            <td>페이지 수</td>
+            <td>시간체크</td>
+            <td>성공</td>
+        </tr>
+        <tr>
+            <div id="plan" name="plan">
+                <td><input type="text" name="subject" id="subject"></td>
+                <td><select name="book" id="book"></select></td>
+                <td><input type="text" name="countpg" id="countpg"></td>
+                <td><button onclick="">시작</button> <input type="time" name="time" id="time"></td>
+                <td><input type="checkbox" name="sucess" id="sucess"></td>
+            </div>
+        </tr>
+    </table>
+    <br>
+    <button id="submit"> 저장 </button>
+</body>
+</html>

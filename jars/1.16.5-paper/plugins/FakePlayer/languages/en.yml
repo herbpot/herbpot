@@ -1,0 +1,24 @@
+help-messages: |-
+  &a====== %prefix% &a======
+  &7/fakeplayer &r> &eShows help message.
+  &7/fakeplayer help &r> &eShows help message.
+  &7/fakeplayer reload &r> &eReloads the plugin.
+  &7/fakeplayer version &r> &eChecks for update.
+  &7/fakeplayer menu &r> &eShows the main menu.
+  &7/fakeplayer add <name> &r> &eAdds a fake player name.
+  &7/fakeplayer remove <name> &r> &eRemoves the fake player.
+  &7/fakeplayer toggle <name> &r> &eToggles the visibility of the fake player.
+  &7/fakeplayer tp <name> &r> &eTeleports you to the fake player location.
+  &7/fakeplayer chat <name> <message> &r> &eSends a fake message for the fake player.
+errors:
+  there-is-already: '%prefix% &cThere is already fake player such that name (%player_name%).'
+  not-found: '%prefix% &cThere is no fake player such that name (%player_name%).'
+general:
+  join-message: '%prefix% &a%player_name% just joined the server!'
+  quit-message: '%prefix% &a%player_name% just quit the server!'
+  reload-complete: '%prefix% &aReload complete! &7Took (%ms%ms)'
+  new-version-found: '%prefix% &eNew version found (v%version%)'
+  latest-version: '%prefix% &aYou''re using the latest version (v%version%)'
+  fake-player-added: '%prefix% &aFake player added (%player_name%)'
+  toggle-fake-player: '%prefix% &aFake player toggled (%player_name%)'
+  fake-player-removed: '%prefix% &aFake player removed (%player_name%)'

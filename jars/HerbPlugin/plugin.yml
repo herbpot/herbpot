@@ -1,0 +1,43 @@
+name: HerbPack
+version: '1.0-SNAPSHOT'
+main: herb.herb.Main
+api-version: 1.18
+commands:
+  force:
+    description: "사용자에게 명령어를 강제합니다"
+    aliases:
+      - force
+    usage: /force
+
+  tpto:
+    description: "상대방을 사용자에게 tp시킵니다"
+    aliases:
+      - tpto
+      - ttp
+    usage: /tpto
+
+  trace:
+    description: "클릭한 플레이어에게 이동합니다"
+    aliases:
+      - trace
+      - tr
+    usage: /trace
+
+  manhunt:
+    description: "manhunt를 시작합니다"
+    aliases:
+      - manhunt
+      - hunt
+    usage: /manhunt
+
+  regionwar:
+    description: "지역전쟁을 시작합니다"
+    aliases:
+      - startrw
+    usage: /regionwar
+
+  diamining:
+    description: "다이아캐기 내기를 시작합니다"
+    aliases:
+      - min
+    usage: /diamining

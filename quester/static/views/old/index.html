@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <h2><button type="submit" id="submiter_">문제 업로드</button></h2>
+    <h2><input type="text" name="id" id="id"><button type="submit" id="submiter">문제 검색</button></h2>
+    <script>
+        const ID = document.getElementById('id')
+        const submiter = document.getElementById('submiter')
+        const submiter_ = document.getElementById('submiter_')
+        var toid
+        function goID(){
+            toid = ID.value
+            location.href = `q/${toid}`
+        }
+        function go() {
+            location.href = 'upq'
+        }
+        submiter_.addEventListener('click',go)
+        submiter.addEventListener('click',goID)
+    </script>
+</body>
+</html>

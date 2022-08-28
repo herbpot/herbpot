@@ -1,0 +1,389 @@
+[13:38:39] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:38:40] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[13:38:41] [Worker-Main-4/INFO]: Loaded 7 recipes
+[13:38:47] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[13:38:47] [Server thread/INFO]: Loading properties
+[13:38:47] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[13:38:47] [Server thread/INFO]: Debug logging is disabled
+[13:38:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:38:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:38:48] [Server thread/INFO]: Default game type: SURVIVAL
+[13:38:48] [Server thread/INFO]: Generating keypair
+[13:38:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:38:48] [Server thread/INFO]: Using default channel type
+[13:38:53] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Cannot find main class `herbpot.Main'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:84) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.ClassNotFoundException: herbpot.Main
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	... 8 more
+[13:38:53] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[13:38:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:38:53] [Server thread/INFO]: Preparing level "world"
+[13:38:54] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:38:54] [Server thread/INFO]: Preparing spawn area: 0%
+[13:38:54] [Server thread/INFO]: Preparing spawn area: 0%
+[13:38:54] [Server thread/INFO]: Time elapsed: 806 ms
+[13:38:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:38:55] [Server thread/INFO]: Time elapsed: 240 ms
+[13:38:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:38:56] [Server thread/INFO]: Time elapsed: 988 ms
+[13:38:56] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[13:38:59] [Server thread/INFO]: Running delayed init tasks
+[13:38:59] [Server thread/INFO]: Done (12.011s)! For help, type "help"
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 16. When Paper for Minecraft 1.17 is
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 16 will
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 11.0.16.1
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java16
+[13:38:59] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[13:38:59] [Server thread/INFO]: Timings Reset
+[13:39:03] [Craft Scheduler Thread - 0/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[13:42:41] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5095ms or 101 ticks behind
+[13:42:57] [User Authenticator #1/INFO]: UUID of player herb05 is ade407eb-09e2-46ee-99ee-2cc310eb1ad9
+[13:42:58] [Server thread/INFO]: herb05 joined the game
+[13:42:58] [Server thread/INFO]: herb05[/127.0.0.1:57775] logged in with entity id 545 at ([world]-110.83151156398178, 72.0, -66.5355237221253)
+[13:48:01] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:48:01] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:48:01] [Server thread/INFO]: Debug logging is disabled
+[13:48:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:48:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:48:01] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[13:48:01] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:48:02] [Server thread/INFO]: Loaded 7 recipes
+[13:48:04] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:48:04] [Server thread/INFO]: Loaded 7 recipes
+[13:48:06] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Cannot find main class `Main'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:84) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.ClassNotFoundException: Main
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	... 16 more
+[13:48:06] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[13:48:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:48:06] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[13:48:07] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:48:07] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5526ms or 110 ticks behind
+[13:48:07] [Server thread/INFO]: Timings Reset
+[13:48:07] [Craft Scheduler Thread - 5/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[13:49:47] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:49:47] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:49:47] [Server thread/INFO]: Debug logging is disabled
+[13:49:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:49:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:49:47] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[13:49:47] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:49:47] [Server thread/INFO]: Loaded 7 recipes
+[13:49:48] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:49:49] [Server thread/INFO]: Loaded 7 recipes
+[13:49:50] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Cannot find main class `herbpot.Main'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:84) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.ClassNotFoundException: herbpot.Main
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	... 16 more
+[13:49:50] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[13:49:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:49:50] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[13:49:51] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:49:51] [Server thread/INFO]: Timings Reset
+[13:49:51] [Craft Scheduler Thread - 6/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[13:51:25] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:51:25] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:51:25] [Server thread/INFO]: Debug logging is disabled
+[13:51:25] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:51:25] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:51:25] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[13:51:25] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:51:25] [Server thread/INFO]: Loaded 7 recipes
+[13:51:26] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:51:27] [Server thread/INFO]: Loaded 7 recipes
+[13:51:28] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Cannot find main class `herbpot.Main.Main'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:84) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.ClassNotFoundException: herbpot.Main.Main
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	... 16 more
+[13:51:28] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[13:51:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:51:28] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[13:51:28] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:51:28] [Server thread/INFO]: Timings Reset
+[13:51:28] [Craft Scheduler Thread - 7/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[13:58:00] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[13:58:00] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[13:58:00] [Server thread/INFO]: Debug logging is disabled
+[13:58:00] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:58:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:58:00] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[13:58:00] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:58:00] [Server thread/INFO]: Loaded 7 recipes
+[13:58:02] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[13:58:02] [Server thread/INFO]: Loaded 7 recipes
+[13:58:03] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Cannot find main class `herbpot.Main'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:84) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.lang.ClassNotFoundException: herbpot.Main
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:398) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	... 16 more
+[13:58:03] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[13:58:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:58:03] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[13:58:04] [Server thread/INFO]: CONSOLE: Reload complete.
+[13:58:04] [Server thread/INFO]: Timings Reset
+[13:58:04] [Craft Scheduler Thread - 8/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[13:59:09] [Server thread/INFO]: herb05 lost connection: Disconnected
+[13:59:09] [Server thread/INFO]: herb05 left the game
+[14:04:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[14:04:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[14:04:50] [Server thread/INFO]: Debug logging is disabled
+[14:04:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:04:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:04:50] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[14:04:50] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[14:04:51] [Server thread/INFO]: Loaded 7 recipes
+[14:04:53] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[14:04:53] [Server thread/INFO]: Loaded 7 recipes
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\annotations-13.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\HerbPot.main.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\kotlin-stdlib-1.5.10.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\kotlin-stdlib-common-1.5.10.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\kotlin-stdlib-jdk7-1.5.10.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/ERROR]: Could not load 'plugins\kotlin-stdlib-jdk8-1.5.10.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:160) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.reload(CraftServer.java:963) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.Bukkit.reload(Bukkit.java:726) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:826) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.handleCommandQueue(DedicatedServer.java:470) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:437) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1347) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1135) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+	... 15 more
+[14:04:54] [Server thread/INFO]: [FakePlayer] Loading FakePlayer v2.1.0
+[14:04:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:04:54] [Server thread/INFO]: [FakePlayer] Enabling FakePlayer v2.1.0
+[14:04:55] [Server thread/INFO]: CONSOLE: Reload complete.
+[14:04:55] [Server thread/INFO]: Timings Reset
+[14:04:55] [Craft Scheduler Thread - 9/INFO]: [FakePlayer] You're using the latest version (v2.1.0)
+[14:08:11] [Server thread/INFO]: Stopping the server
+[14:08:11] [Server thread/INFO]: Stopping server
+[14:08:11] [Server thread/INFO]: [FakePlayer] Disabling FakePlayer v2.1.0
+[14:08:11] [Server thread/INFO]: Saving players
+[14:08:11] [Server thread/INFO]: Saving worlds
+[14:08:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:08:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:08:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:08:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:08:12] [Server thread/INFO]: Flushing Chunk IO
+[14:08:12] [Server thread/INFO]: Closing Thread Pool
+[14:08:12] [Server thread/INFO]: Closing Server

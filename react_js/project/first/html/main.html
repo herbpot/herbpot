@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script type="text/babel">
+
+        const scadul = {
+            "오전 7:00:00":"기상",
+            "오전 8:10:00":"식사",
+            "오전 8:40:00":"등교",
+            "오후 5:00:00":"귀사",
+            "오후 5:20:00":"0교시 자습",
+            "오후 6:00:00":"저녁식사",
+            "오후 7:00:00":"1교시 자습",
+            "오후 8:30:00":"2교시 자습",
+            "오후 10:00:00":"자유시간",
+
+        }
+
+        let i = 0;
+
+        const scalist = Object.values(scadul)
+
+        const root = document.getElementById("root")
+
+        const Title = () => {
+            return (<h1>기숙사 일정</h1>)
+        }
+
+        const Next = () => {
+            const now = 0
+            let nowS = "기상"
+            const [nowClock,clockmodifier] = React.useState(0)
+            const [nowsca,nowscmodifier] = React.useState()
+            const [nextsca,nextscamodifier] = React.useState()
+
+            const setclock = () => {
+                let nowTime = new Date()
+                let noC = nowTime.toLocaleTimeString()
+                let list = Object.keys(scadul)
+                list.push(noC)
+                list = list.sort()
+                let index = list.indexOf(noC)
+                let nowS = scadul[list[index-1]]
+                let nextS = scadul[list[index+1]]
+                
+                clockmodifier(noC)
+
+                nowscmodifier(nowS)
+
+                nextscamodifier(nextS)
+            
+            }
+            if(i == 0){
+                setTimeout(function run() {
+                    setclock()
+                    setTimeout(run, 1000);
+                }, 1000);
+                i++
+            }
+            return(
+                <div>
+                    <h3>현재 시각 : {nowClock}  </h3>
+                    <h3>현재 일정 : {nowsca}    </h3>
+                    <h3>다음 일정 : {nextsca}   </h3>
+                </div>
+            )
+        }
+
+        const Search = () => {
+
+            return(
+                <div class="search_div">
+                    <form class="search">
+                        <button id="submit" type="submit">검색</button>
+                        <input type="text" id="searcher" />
+                        <select name="engin" id="engine">
+                            <option value="google">google</option>
+                            <option value="naver">naver</option>
+                        </select>
+                    </form>
+                </div>
+            )
+        }
+
+        const App = () => {
+            return(
+            <div class="main">
+                <Title />
+                <Next />
+                <Search />
+            </div>
+            )
+        
+        }
+        ReactDOM.render(<App />,root)
+        const Ssub = document.getElementById("submit")
+        Ssub.addEventListener("click",(e) => {
+            e.preventDefault()
+            let engine = document.getElementById("engine").value
+            let keyword = document.getElementById("searcher").value
+            if(engine === 'google'){ 
+                location.href = 'https://www.google.co.kr/search?q=' + keyword; 
+            }else if(engine === 'naver'){ 
+                location.href = 'https://search.naver.com/search.naver?query=' + keyword; 
+            }
+        })
+    </script>
+</html>

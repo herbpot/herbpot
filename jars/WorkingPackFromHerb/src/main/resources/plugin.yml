@@ -1,0 +1,4 @@
+name: WorkingPack
+version: '${project.version}'
+main: workingpack.workingpack.WorkingPack
+api-version: 1.18

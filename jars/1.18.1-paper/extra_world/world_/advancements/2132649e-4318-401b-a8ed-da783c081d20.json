@@ -1,0 +1,28 @@
+{
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2022-02-18 02:30:56 +0900",
+      "enchanted_golden_apple": "2022-02-18 02:32:06 +0900"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2022-02-18 02:30:38 +0900"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2022-02-18 02:30:56 +0900"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-02-18 02:19:13 +0900"
+    },
+    "done": false
+  },
+  "DataVersion": 2865
+}

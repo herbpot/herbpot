@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title><%= id %></title>
+</head>
+<body>
+    <script>
+        var id = "<%= id %>";
+        var file = "<%= file %>";
+    </script>
+    <script src="../../static/js/loadfile.js"></script>
+    <div>
+        <textarea name="Qname" id="Qname" cols="30" rows="10" readonly></textarea>
+        <textarea name="Qtext" id="Qtext" cols="30" rows="10" readonly></textarea>
+        <textarea name="Qanswer" id="Qanswer" cols="30" rows="10" readonly></textarea>
+        <button type="submit" id="submiter"></button>
+    </div>
+    <div>
+        <p id="listener"></p>
+    </div>
+</body>
+</html>

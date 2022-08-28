@@ -1,0 +1,13 @@
+_:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2865
+  type: DIRT
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"text":"_"}],"text":""}'
+    lore:
+    - '{"extra":[{"text":"우클릭 구매 / 좌클릭 판매"}],"text":""}'
+    - '{"extra":[{"text":"shift 추가시 한번에 64개씩 판매"}],"text":""}'
+    - '{"extra":[{"text":"가격 -"}],"text":""}'
+    - '{"extra":[{"text":"1000"}],"text":""}'

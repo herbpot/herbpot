@@ -1,0 +1,17 @@
+name: ToNone
+version: '${project.version}'
+main: tonone.tonone.ToNone
+api-version: 1.18
+commands:
+  trace:
+    aliases: ['tr']
+    description: "서버 내의 사용자들에게 텔레포트하기 위한 명령어입니다"
+    usage: /trace
+  tpto:
+    aliases: ['to']
+    description: "대상을 사용자에게 tp시킵니다"
+    usage: /tpto
+  startmanhunt:
+    aliases: ['startm']
+    description: "manhunt게임을 시작합니다"
+    usage: /startmanhunt

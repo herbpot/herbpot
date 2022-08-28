@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button click</title>
+</head>
+<body>
+    <span id="board"> Total Click : 0</span>
+    <button id="Click"> Click me </button>
+
+    <script>
+        let cnt = 0
+        const btn = document.getElementById('Click')
+        const board = document.getElementById('board')
+        handleBtn = () => {
+            console.log("click!");
+            cnt += 1
+            board.innerText = cnt
+        }
+        btn.addEventListener("click",handleBtn)
+    </script>
+</body>
+</html>
