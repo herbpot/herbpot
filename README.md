@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Herbpot's%20GitHub&fontSize=70&animation=fadeIn&fontAlignY=60&fontColor=gray)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Herbpot's%20GitHub&fontSize=70&animation=fadeIn&fontAlignY=60)
 
 <br>
 
